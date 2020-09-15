@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp start",
-    "build": "gulp build"
+    "build": "gulp build",
+    "lint": "eslint ./app",
+    "lint:fix": "eslint ./app --fix",
+    "stylelint": "stylelint app/**/*.{css,scss} --fix"
   },
   "repository": {
     "type": "git",
@@ -17,16 +20,27 @@
   "homepage": "https://bitbucket.org/onpoint_dev/msd_picker#readme",
   "dependencies": {
     "esm": "^3.2.25",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "prettier": "^2.1.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-shorthand": "^1.1.0",
+    "stylelint": "^13.7.1",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.2",
     "webpack-stream": "^6.1.0"
   }
 }
