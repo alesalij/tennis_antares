@@ -1,0 +1,124 @@
+.map {
+  background-color: $grey;
+
+  .container {
+    padding-top: 2.8rem;
+    padding-bottom: 2rem;
+    background: rgba(#ffffff, $alpha: 0.6);
+  }
+
+  &_decription {
+    color: $dark-green;
+    font-family: 'Segoe UI Semibold', sans-serif;
+    font-size: 1.24rem;
+    line-height: 1.3rem;
+    text-align: center;
+  }
+
+  &_wrap {
+    position: relative;
+    margin-top: 2rem;
+
+    .map_img {
+      width: 100%;
+      height: 28rem;
+      margin: auto;
+      background: url('.././img/page-1/map.png') center center / contain
+        no-repeat;
+    }
+
+    .map_item {
+      position: absolute;
+      padding: 0.186rem 0.55rem 0.21rem 0.6rem;
+      background: $bright-green;
+      border-radius: 0.5rem;
+
+      a {
+        color: $dark-green;
+        font-size: 0.86rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      &__1 {
+        top: 17px;
+        left: 503px;
+      }
+
+      &__2 {
+        top: 76px;
+        left: 315px;
+      }
+
+      &__3 {
+        top: 127px;
+        left: 286px;
+      }
+
+      &__4 {
+        top: 86px;
+        left: 655px;
+      }
+
+      &__5 {
+        top: 47px;
+        left: 559px;
+      }
+
+      &__6 {
+        top: 228px;
+        left: 274px;
+      }
+
+      &__7 {
+        top: 170px;
+        left: 909px;
+      }
+
+      &__8 {
+        top: 115px;
+        left: 853px;
+      }
+
+      &__9 {
+        top: 293px;
+        left: 926px;
+      }
+
+      &__10 {
+        top: 360px;
+        left: 810px;
+      }
+    }
+  }
+
+  &_btn {
+    width: 12rem;
+    height: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    background: $bright-green;
+    border-radius: 0.5rem;
+    box-shadow: $shadow;
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      color: $dark-green;
+      font-family: 'Segoe UI Semibold', sans-serif;
+      font-size: 1.05rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+}

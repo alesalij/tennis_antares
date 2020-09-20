@@ -7,7 +7,7 @@ import plumber from "gulp-plumber";
 
 const styles = (done) => {
   src("app/styles/*.{sass, scss}") 
-    .pipe( plumber())
+    .pipe(plumber())
     .pipe(sass())
     .pipe(
       autoprefixer({

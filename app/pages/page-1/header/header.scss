@@ -1,0 +1,100 @@
+header {
+  width: 100%;
+  height: 50rem;
+  padding-top: 6rem;
+  background: url('../.././img/page-1/bg-header.jpg') 0 0 / cover no-repeat;
+
+  .container {
+    display: flex;
+    height: 44rem;
+    background: rgba(#ffffff, $alpha: 0.6);
+
+    .header_half-1 {
+      position: relative;
+      flex-basis: 50%;
+
+      .header_img-girl {
+        position: absolute;
+        left: -20%;
+        width: 120%;
+        height: 100%;
+        background: url('../.././img/page-1/girl.png') 0 0 / cover no-repeat;
+      }
+    }
+
+    .header_half-2 {
+      position: relative;
+      flex-basis: 50%;
+      padding-right: 2rem;
+
+      .header_slogan {
+        margin-top: 2rem;
+        color: $green;
+        font-family: 'Segoe UI Light', sans-serif;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 600;
+        text-align: right;
+      }
+
+      .header_title {
+        margin-top: 7rem;
+        color: $green;
+        font-family: 'Segoe UI Semibold', serif;
+        font-size: 5.2rem;
+        line-height: 4.2rem;
+        text-align: right;
+        text-shadow: $text-shadow-big;
+      }
+
+      .header_info {
+        margin-top: 7rem;
+        color: $green;
+        font-family: 'Segoe UI Light', sans-serif;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 2.4rem;
+        text-align: right;
+      }
+
+      .header_social {
+        position: absolute;
+        right: 2rem;
+        bottom: 0.2rem;
+        display: flex;
+
+        .text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgba(white, 0.9);
+          font-family: 'Segoe UI Semibold', serif;
+          font-size: 1rem;
+          text-shadow: $text-shadow;
+        }
+
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon {
+            a {
+              svg {
+                width: 23px;
+                height: 23px;
+                margin-left: 0.7rem;
+                fill: rgba(white, 0.9);
+              }
+
+              svg:hover {
+                fill: rgba($green, 0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

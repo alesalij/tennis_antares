@@ -1,0 +1,24 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0.8rem 0.5rem;
+  }
+
+  &_text {
+    margin: 0 0.25rem;
+    color: $green;
+    font-size: 2.1rem;
+  }
+
+  svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-bottom: 0.1rem;
+  }
+}

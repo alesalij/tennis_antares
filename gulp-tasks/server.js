@@ -21,10 +21,10 @@ const server = (done) => {
   });
   watch("app/js/**/*.js", series(script, readyReload));
   watch("app/pages/**/*.pug", series(pugToHtml, readyReload));
-  watch("app/styles/**/*.{sass,scss}", series(styles, readyReload));
+  watch("app/**/*.{sass,scss}", series(styles, readyReload));
   watch("app/img/**/*", series(imgMin, readyReload));
   watch("app/fonts/**/*", series(fonts, readyReload));
   done();
 };
 
-export {server}
+export { server };

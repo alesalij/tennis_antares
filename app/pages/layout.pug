@@ -7,12 +7,11 @@ html(lang="ru")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
     link(rel="stylesheet" href="css/style.css")
   body
-    .container
-      block nav
-        include common/nav
-      block content
-      block footer
-        include common/footer
-      block scripts
-        script(src='js/index.js')
+    block nav
+      include common/nav/nav
+    block content
+    block footer
+      //- include common/footer
+    block scripts
+      script(src='js/index.js')
       

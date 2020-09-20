@@ -2,5 +2,30 @@
   font-family: 'Segoe UI Regular';
   font-style: normal;
   font-weight: normal;
-  src: url('./../fonts/SegoeUIRegular/SegoeUI.woff') format('woff'), url('./../fonts/SegoeUIRegular/SegoeUI.ttf') format('truetype');
+  src: url('./../fonts/SegoeUIRegular/SegoeUI.woff') format('woff'),
+    url('./../fonts/SegoeUIRegular/SegoeUI.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../fonts/SegoeUILight/SegoeUI-Light.woff') format('woff'),
+    url('./../fonts/SegoeUILight/SegoeUI-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../fonts/SegoeUIItalic/SegoeUI-Italic.woff') format('woff'),
+    url('./../fonts/SegoeUIItalic/SegoeUI-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../fonts/SegoeUISemibold/SegoeUI-Semibold.woff') format('woff'),
+    url('./../fonts/SegoeUISemibold/SegoeUI-Semibold.ttf') format('truetype');
 }

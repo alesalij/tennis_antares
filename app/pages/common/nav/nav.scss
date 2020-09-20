@@ -1,0 +1,191 @@
+nav {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  border-top: 4px solid $bright-green;
+  background: $grey;
+
+  .container {
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+
+    .nav_logo {
+      display: flex;
+      height: 100%;
+      flex-basis: 20%;
+
+      a {
+        display: flex;
+        height: 100%;
+        flex-basis: 20%;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+      }
+
+      .nav_logo-text {
+        color: $dark-grey;
+        font-size: 1.24rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 1rem;
+
+        span {
+          font-size: 1.52rem;
+          font-weight: 600;
+          letter-spacing: -1px;
+          line-height: 1rem;
+        }
+      }
+
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .nav_items {
+      display: flex;
+      height: 100%;
+      flex-basis: 44%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: $dark-green;
+        font-size: 0.86rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      a:hover {
+        color: $green_hover;
+        text-shadow: $text-shadow;
+      }
+    }
+
+    .nav_item__more {
+      position: relative;
+
+      .item {
+        z-index: 2;
+        display: flex;
+        color: $dark-green;
+        font-size: 0.86rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .item:hover {
+        color: $green_hover;
+        cursor: pointer;
+        text-shadow: $text-shadow;
+      }
+
+      .item:hover .nav_arrow-down svg {
+        fill: $green_hover;
+      }
+
+      .item:hover a {
+        color: $green_hover;
+      }
+
+      .list {
+        position: absolute;
+        z-index: 1;
+        top: -0.5rem;
+        left: -0.5rem;
+        display: none;
+        width: 10rem;
+        height: 7rem;
+        background: white;
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+      }
+
+      .list_content {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        display: flex;
+        width: 8rem;
+        height: 4rem;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+          color: $dark-green;
+          font-size: 0.86rem;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+
+        a:hover {
+          color: $green_hover;
+          text-shadow: $text-shadow;
+        }
+      }
+    }
+
+    .nav_item__more:hover .list {
+      display: block;
+    }
+
+    .nav_arrow-down {
+      position: relative;
+      width: 8px;
+      height: 8px;
+      margin-left: 0.1rem;
+
+      svg {
+        fill: $dark-green;
+      }
+    }
+
+    .nav_phone {
+      display: flex;
+      flex-basis: 18%;
+      align-items: center;
+      justify-content: flex-end;
+      color: $dark-green;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .nav_btn {
+      display: flex;
+      flex-basis: 18%;
+      align-items: center;
+      justify-content: flex-end;
+
+      .btn_wrap {
+        padding: 11px 11px 9px 11px;
+        background: $white-green;
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+        color: $green;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-shadow: $text-shadow;
+        text-transform: uppercase;
+      }
+
+      .btn_wrap:hover {
+        color: $green_hover;
+        cursor: pointer;
+      }
+    }
+  }
+}
