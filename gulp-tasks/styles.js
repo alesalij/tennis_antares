@@ -4,10 +4,12 @@ import autoprefixer from "gulp-autoprefixer";
 import shorthand from "gulp-shorthand";
 import cleanCSS from "gulp-clean-css";
 import plumber from "gulp-plumber";
+import concat from "gulp-concat";
 
 const styles = (done) => {
-  src("app/styles/*.{sass, scss}") 
+  src(["app/styles/*.scss", "app/pages/**/*.scss"])
     .pipe(plumber())
+    .pipe(concat("style.scss"))
     .pipe(sass())
     .pipe(
       autoprefixer({
@@ -20,4 +22,4 @@ const styles = (done) => {
   done();
 };
 
-export { styles };
+export default styles;

@@ -3,8 +3,11 @@ import pug from "gulp-pug";
 import plumber from "gulp-plumber";
 
 const pugToHtml = (done) => {
-  src("app/pages/*.pug").pipe(plumber()).pipe(pug()).pipe(dest("dist"));
+  src(["app/pages/*.pug", "!app/pages/layout.pug"])
+    .pipe(plumber())
+    .pipe(pug())
+    .pipe(dest("dist"));
   done();
 };
 
-export { pugToHtml };
+export default pugToHtml;

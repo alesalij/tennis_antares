@@ -1,8 +1,34 @@
 .map {
   background-color: $grey;
 
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2.8rem;
+      margin: 0 0.5rem 0.8rem 0.5rem;
+    }
+
+    &_text {
+      margin: 0 0.34rem;
+      color: $green;
+      font-size: 1.86rem;
+    }
+
+    svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+
   .container {
-    padding-top: 2.8rem;
+
     padding-bottom: 2rem;
     background: rgba(#ffffff, $alpha: 0.6);
   }
@@ -16,14 +42,14 @@
   }
 
   &_wrap {
-    position: relative;
     margin-top: 2rem;
 
     .map_img {
-      width: 100%;
+      position: relative;
+      width: 1280px;
       height: 28rem;
       margin: auto;
-      background: url('.././img/page-1/map.png') center center / contain
+      background: url('.././img/map.png') center center / contain
         no-repeat;
     }
 
@@ -97,10 +123,10 @@
   }
 
   &_btn {
-    width: 12rem;
+    width: 13rem;
     height: 3rem;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
     background: $bright-green;
     border-radius: 0.5rem;
     box-shadow: $shadow;
@@ -111,14 +137,15 @@
       height: 100%;
       align-items: center;
       justify-content: center;
-      color: $dark-green;
+      color: white;
       font-family: 'Segoe UI Semibold', sans-serif;
       font-size: 1.05rem;
       text-decoration: none;
+      text-shadow: $text-shadow;
     }
 
     a:hover {
-      color: white;
+      color: $dark-green;
     }
   }
 }

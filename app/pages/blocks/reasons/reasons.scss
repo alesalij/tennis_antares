@@ -1,0 +1,27 @@
+.reasons {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2.8rem;
+      margin: 0 0.5rem 0.8rem 0.5rem;
+    }
+
+    &_text {
+      margin: 0 0.34rem;
+      color: $green;
+      font-size: 1.86rem;
+    }
+
+    svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+}

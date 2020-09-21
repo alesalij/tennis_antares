@@ -4,13 +4,13 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   border-top: 4px solid $bright-green;
   background: $grey;
 
   .container {
     display: flex;
-    height: 6rem;
+    height: 5rem;
     justify-content: space-between;
 
     .nav_logo {
@@ -28,6 +28,7 @@ nav {
       }
 
       .nav_logo-text {
+        margin-bottom: 0.2rem;
         color: $dark-grey;
         font-size: 1.24rem;
         font-weight: 600;
@@ -43,8 +44,9 @@ nav {
       }
 
       svg {
-        width: 60px;
-        height: 60px;
+        width: 58px;
+        height: 58px;
+        margin-bottom: 0.2rem;
       }
     }
 
